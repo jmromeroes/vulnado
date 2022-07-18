@@ -23,6 +23,10 @@ public class Comment {
     long time2 = new Date().getTime();
     long time3 = new Date().getTime();
     long time4 = new Date().getTime();
+    long time4 = new Date().getTime();
+    long time4 = new Date().getTime();
+    long time4 = new Date().getTime();
+    long time5 = new Date().getTime();
     Timestamp timestamp = new Timestamp(time);
     Comment comment = new Comment(UUID.randomUUID().toString(), username, body, timestamp);
     try {
