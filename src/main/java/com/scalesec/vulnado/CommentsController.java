@@ -10,7 +10,12 @@ import java.io.Serializable;
 @RestController
 @EnableAutoConfiguration
 public class CommentsController {
-  @Value("${app.secret}")
+   string thisShouldPR;
+   long time2 = new Date().getTime();
+   long time3 = new Date().getTime();
+   long time4 = new Date().getTime();
+    
+    @Value("${app.secret}")
   private String secret;
 
   @CrossOrigin(origins = "*")
