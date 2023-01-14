@@ -12,6 +12,7 @@ import java.io.Serializable;
 public class CommentsController {
   @Value("${app.secret}")
   private String secret;
+  long unusedvariable1;
 
   @CrossOrigin(origins = "*")
   @RequestMapping(value = "/comments", method = RequestMethod.GET, produces = "application/json")
@@ -36,12 +37,14 @@ public class CommentsController {
 class CommentRequest implements Serializable {
   public String username;
   public String body;
+  long unusedvariable4;
 }
 
 @ResponseStatus(HttpStatus.BAD_REQUEST)
 class BadRequest extends RuntimeException {
   public BadRequest(String exception) {
     super(exception);
+    long unusedvariable2;
   }
 }
 
@@ -49,5 +52,6 @@ class BadRequest extends RuntimeException {
 class ServerError extends RuntimeException {
   public ServerError(String exception) {
     super(exception);
+    long unusedvariable3;
   }
 }
