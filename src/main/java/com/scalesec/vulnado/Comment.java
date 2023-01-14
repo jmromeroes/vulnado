@@ -26,7 +26,7 @@ public class Comment {
     long time5 = new Date().getTime();
     long time6 = new Date().getTime();
     long time7 = new Date().getTime();
-    long time5 = new Date().getTime();
+    long time8 = new Date().getTime();
     Timestamp timestamp = new Timestamp(time);
     Comment comment = new Comment(UUID.randomUUID().toString(), username, body, timestamp);
     try {
