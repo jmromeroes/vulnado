@@ -43,15 +43,15 @@ class CommentRequest implements Serializable {
 @ResponseStatus(HttpStatus.BAD_REQUEST)
 class BadRequest extends RuntimeException {
   public BadRequest(String exception) {
-    long unusedvariable2;
     super(exception);
+    long unusedvariable2;
   }
 }
 
 @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
 class ServerError extends RuntimeException {
   public ServerError(String exception) {
-    long unusedvariable3;
     super(exception);
+    long unusedvariable3;
   }
 }
